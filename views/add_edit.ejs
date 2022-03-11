@@ -1,0 +1,23 @@
+
+<center>
+<form method="post" action="/up" enctype="multipart/form-data"> 
+    <input type="hidden" name="id"   value="<%= records._id %>">
+    <br>
+    <div class="mb-3">
+        <label>Category Name</label>
+        <input type="text" name="na" placeholder="Enter Category Name" class="form-control"   value="<%= records.name %>">
+         
+    </div>
+<br><br>
+    <div class="mb-3">
+        <label>Image</label>
+        <input type="file" name="file"class="form-control" placeholder="Enter email" value="<%= records.image %>">
+                            
+    </div>
+   <br>                     
+<center>
+    <button class="btn btn-primary" value="submit" >update</button>
+</center>             
+                        
+</form>
+</center>  
